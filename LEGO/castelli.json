@@ -1,0 +1,24 @@
+{
+ "profiles": [
+   {
+     "firstname": "King ",
+     "lastname": "Castle",      
+     "imgSrc": "King-Castle.jpg",
+     "id": "King-castle",
+     "istruzioni":["img1.jpg"]
+   },
+   {
+     "firstname": "King Montain ",
+     "lastname": "fortress",      
+     "imgSrc": "King Montain.jpg",
+     "id": "King-monstain"
+   },
+
+   {
+     "firstname": "Black Monanchs",
+     "lastname": "Castle",
+     "imgSrc": "Black Monanchs.jpg",
+     "id": "Black-monanchs"
+   }
+ ]
+}
