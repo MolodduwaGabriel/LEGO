@@ -1,5 +1,5 @@
 const express = require('express');
-const people = require('./castelli.json'); //Copia il file people.json dentro la variabile people
+const lego = require('./castelli.json'); //Copia il file people.json dentro la variabile people
 const app = express();
 
 app.set('view engine', 'pug');
@@ -8,14 +8,14 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => {
   res.render('index', {
     title: 'LEGO',
-    people: people.profiles //Passa il vettore profiles alla pagina index.pug
+    lego: lego.costruzioni //Passa il vettore profiles alla pagina index.pug
   });
 });
-app.get('/profile', (req, res) => {
-  const person = people.profiles.find(p => p.id === req.query.id);
-  res.render('profile', {
-    title: `About ${person.firstname} ${person.lastname}`,
-    person,
+app.get('/castelli', (req, res) => {
+  const cartella = lego.costruzioni.find(p => p.id === req.query.id);
+  res.render('castelli', {
+    title: `About ${cartella.name}`,
+    cartella,
   });
 });
 

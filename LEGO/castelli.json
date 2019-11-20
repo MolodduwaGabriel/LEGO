@@ -1,21 +1,20 @@
 {
- "profiles": [
+ "costruzioni": [
    {
-     "firstname": "King ",
-     "lastname": "Castle",      
-     "imgSrc": "King-Castle.jpg",
+     "name": "King Castle ",
+       
+   
      "id": "King-castle",
      "istruzioni":["img1.jpg"]
    },
    {
-     "firstname": "King Montain ",
-     "lastname": "fortress",      
+     "name": "King Montain fortress ",     
      "imgSrc": "King Montain.jpg",
      "id": "King-monstain"
    },
 
    {
-     "firstname": "Black Monanchs",
+     "name": "Black Monanchs",
      "lastname": "Castle",
      "imgSrc": "Black Monanchs.jpg",
      "id": "Black-monanchs"
