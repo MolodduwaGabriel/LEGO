@@ -1,6 +1,9 @@
 var express = require('express');
 const lego = require('./lego.json');
 var app = express();
+var path = require('path');
+var cors = require('cors');
+app.use(cors());
 
 app.set('view engine','pug');
 
@@ -22,4 +25,14 @@ app.get('/profile',(req, res) => {
 });
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
+});
+
+app.get('/api', function(req, res){
+    if(req.query.id == null)
+        res.sendFile(path.join(__dirname + '/public/json/lego.json'));
+    else
+    {
+        const mods = lego.lego.find(l => l.SetNumber === req.query.id);
+        res.send(JSON.stringify(mods));
+    }
 });

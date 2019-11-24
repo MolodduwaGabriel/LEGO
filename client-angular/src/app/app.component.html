@@ -1,0 +1,11 @@
+<h1 style="text-align: center;">LEGO</h1>
+<div class="row col-sm-12">
+    <div class="card" style="width: 18rem;" class="col-sm-3" *ngFor="let l of lego">
+        <img src="/assets/img/{{l.SetNumber}}/{{l.ImageSRC}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{l.Nome}}</h5>
+                <button (click)="selectLink(l.SetNumber)">Vai ai dettagli</button>
+            </div>
+    </div>
+</div>
+<app-instruction [lego]="selectedLego" *ngIf="selectedLego"></app-instruction>
