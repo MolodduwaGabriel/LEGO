@@ -1,0 +1,31 @@
+doctype html
+html
+ head
+   title #{title} 
+   link(rel='stylesheet', href='/css/style.css')
+   meta(name="viewport" content="width=device-width, initial-scale=1")
+ body
+   header.header
+         h1 #{title}
+   div.profile
+     div.profile-image(style=`background: url('/images/${leg.ImgSrc}') top center no-repeat; background-size: cover;`)
+     div.profile-details
+       h1.profile-name
+         | #{leg.Nome} 
+       h2.profile-Eta
+         | Età: #{leg.Eta}
+       p.profile-tema
+         | Tema: #{leg.Tema}
+       p.profile-annouscita
+         | Anno di uscita: #{leg.Anno_Uscita}
+       h2.profile-prezzo
+         | PREZZO: #{leg.Prezzo}
+       a.button.button-linkIstruzioni(href=`${leg.LinkIstruzioni}`)
+         | Istruzioni
+     
+     div
+       img.imm2(src=`/images/${leg.ImgSrc1}`) 
+       img.imm2(src=`/images/${leg.ImgSrc2}`) 
+       img.imm2(src=`/images/${leg.ImgSrc3}`) 
+       img.imm2(src=`/images/${leg.ImgSrc4}`) 
+       img.imm2(src=`/images/${leg.ImgSrc5}`) 

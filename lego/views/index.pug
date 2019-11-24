@@ -1,0 +1,19 @@
+doctype html
+html
+ head
+   title #{title}
+   link(rel='stylesheet', href='/css/style.css')
+   meta(name="viewport" content="width=device-width, initial-scale=1")
+ body
+   header.header
+         h1 #{title}
+   article.container
+     each leg in lego
+       div.leg
+
+         h2.leg-name
+           | #{leg.Nome}
+         a(href=`/profile?id=${leg.id}`)
+           img.imm(src=`/images/${leg.ImgSrc}`)
+           p #{leg.Nome}
+           

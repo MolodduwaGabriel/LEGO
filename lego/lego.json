@@ -1,0 +1,50 @@
+{
+"profiles" : [
+    {
+        "Nome": "Lego Harry Potter",
+        "Eta" : "9-14",
+        "LinkIstruzioni" : "https://letsbuilditagain.com/instructions/4709/",
+        "ImgSrc": "lego-harry-potter.jpg",
+        "ImgSrc1": "1HP.jpg",
+        "ImgSrc2": "2HP.jpg",
+        "ImgSrc3": "3HP.jpg",
+        "ImgSrc4": "4HP.jpg",
+        "ImgSrc5": "5HP.jpg",
+        "Tema" : "Harry Potter",
+        "Anno_Uscita": "2001",
+        "Prezzo" : "399,99 €",
+        "id" : "harry-potter"
+    },
+    {
+        "Nome": "Lego Nba",
+        "Eta" : "9+",
+        "LinkIstruzioni" : "https://letsbuilditagain.com/instructions/3433/",
+        "ImgSrc": "lego-nba.jpg",
+        "ImgSrc1": "1NBA.jpg",
+        "ImgSrc2": "2NBA.jpg",
+        "ImgSrc3": "3NBA.jpg",
+        "ImgSrc4": "4NBA.jpg",
+        "ImgSrc5": "5NBA.jpg",
+        "Tema" : "Sports NBA Basketball",
+        "Anno_Uscita": "2003",
+        "Prezzo" : "99,99 €",
+        "id" : "nba"
+    },
+       {
+        "Nome": "Lego Avatar",
+        "Eta" : "7+",
+        "LinkIstruzioni" : "https://letsbuilditagain.com/instructions/3829/",
+        "ImgSrc": "lego-avatar.jpg",
+        "ImgSrc1": "1AVATAR.jpg",
+        "ImgSrc2": "2AVATAR.jpg",
+        "ImgSrc3": "3AVATAR.jpg",
+        "ImgSrc4": "4AVATAR.jpg",
+        "ImgSrc5": "5AVATAR.jpg",
+        "Tema" : "Avatar: The Last Airbender",
+        "Anno_Uscita": "2006",
+        "Prezzo" : "49,99 €",
+        "id" : "avatar"
+    }
+
+]
+}
